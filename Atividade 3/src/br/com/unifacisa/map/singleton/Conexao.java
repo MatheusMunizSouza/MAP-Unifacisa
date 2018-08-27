@@ -28,7 +28,7 @@ public final class Conexao {
     }
   }
 
-  public static Conexao getInstance() {
+  public synchronized static Conexao getInstance() {
     if (conexao == null) {
       conexao = new Conexao();
     }
