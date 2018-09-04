@@ -1,4 +1,4 @@
-package br.com.unifacisa.map;
+package br.com.unifacisa.abstractfactory.map;
 
 class PizzaStoreAF {
 
@@ -95,6 +95,10 @@ class PizzaStoreAF {
     public String toString();
   }
 
+  public interface Veggies {
+    String toString();
+  }
+
   public class FreshClams implements Clams {
 
     public String toString() {
@@ -148,6 +152,24 @@ class PizzaStoreAF {
   public class SlicedPepperoni implements Pepperoni {
     public String toString() {
       return "Sliced Pepperoni";
+    }
+  }
+
+  public class BlackOlives implements Veggies {
+    public String toString() {
+      return "Black Olives Veggie";
+    }
+  }
+
+  public class Spinach implements Veggies {
+    public String toString() {
+      return "Spinach Veggie";
+    }
+  }
+
+  public class Eggplant implements Veggies {
+    public String toString() {
+      return "Eggplant Veggie";
     }
   }
 }
